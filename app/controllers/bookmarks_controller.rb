@@ -2,7 +2,7 @@ class BookmarksController < ApplicationController
   before_action :set_bookmark, only: [:update, :destroy]
 
   def new
-    @bookmark = List.new
+    @bookmark = Bookmark.new
   end
 
   def create
